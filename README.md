@@ -11,3 +11,17 @@
 ## First Draft of Block Diagram:
 
 <img width="429" alt="image" src="https://user-images.githubusercontent.com/41525737/189682936-fc0ad3cd-7a70-4eac-94d3-4468b77c0259.png">
+
+# 2022-13-09: First meeting with TA
+
+- Alice, Jack, and I met with our assigned TA for the fist time, to introduce ourselves, go over our project proposal draft, and get some tips on how to move forward with our proposal before the deadline. We showed our TA which microcontroller we were thinking about using: https://www.adafruit.com/product/5400, and he explained to us that we would have to purchase just the microcontroller portion of this, and that we should avoid de-soldering it to extract that component. We found the component being sold separately here: https://www.adafruit.com/product/3320.
+
+# 2022-15-09: Project Proposal cont. with Alice & Jack
+
+- Discussed and researched which microcontroller to use for our project and finalized ESP32 from Adafruit - as it has bluetooth capabilities too + was discussed in first meeting with TA as a common choice
+- Discussed the requirements we should have for each subsystem and how to qualify/quantify them for the project proposal write-up
+- Discussed how to come up with a mathematical analysis which we could apply to our risk tolerance analysis. We emailed the TA to see about how we could approach this and he suggested calculating the torque of the motor needed to adjust the strap tightness on the cast, and proving that this is possible with the motor we wanted to utilize. After doing some more research on types of motors we could use, we found one that sounded reasonable and performed the necessary calcualtions. In addition to this, Jack added a portion to the risk tolerance analysis regarding the stretch risk of the system's pressure module. He did the research and calculations for this part as well to prove the pressure module will work with our procedure.
+- Finalized our block diagram as per the TA's suggestions
+
+## Finalized Block Diagram for Project Proposal:
+![image](https://user-images.githubusercontent.com/41525737/190554209-e7aa88ed-e8d1-4fd5-beae-b8369b8c3e5e.png)
