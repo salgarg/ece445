@@ -25,3 +25,13 @@
 
 ## Finalized Block Diagram for Project Proposal:
 ![image](https://user-images.githubusercontent.com/41525737/190554209-e7aa88ed-e8d1-4fd5-beae-b8369b8c3e5e.png)
+
+# 2022-16-09: Initial Meeting with Machine Shop:
+
+- At this meeting, Jack, Alice and I met with the machine shop to go over our design idea, and receive feedback. We were provided with feedback on the feasibility of our two functionality ideas - automatic strap adjustment using a motor attached to the straps of the cast, as well as the air cell inflation/deflation. We were told that it would not be feasible to adjust the pressure level of the air cells, and that we should stick with just utilizing a pressure sensor and have the user pump the air cells in the original method (attached air cell pump) until we reach the pressure value specified by the patient's doctor. Additionally, the machine shop representative shared multiple methods of mounting our PCB and motor to the air cast, such as attached the motor directly to the strap of the cast, and potentially having the PCB stored in a compartment with a belt loop attachment, such that it does not make the cast itself too bulky. Furthermore, the representative mentioned that the machine shop works on a first come first serve basis, so we should keep that in mind for the future when we need work done by them.
+
+# 2022-22-09: Meeting #2 with TA:
+
+- Discussed feedback from project proposal including the values which are not necessary within subsystem requirements, and positive feedback on our tolerance analysis portion
+- Shown around the lab that we have access to, and what different types of parts we can borrow from the lab rather than purchasing ourselves
+- Discussed what the design document should look like in relation to the project proposal - more detail than the project proposal but similar general concepts, with the addition of cost analysis.
