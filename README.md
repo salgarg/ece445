@@ -35,3 +35,20 @@
 - Discussed feedback from project proposal including the values which are not necessary within subsystem requirements, and positive feedback on our tolerance analysis portion
 - Shown around the lab that we have access to, and what different types of parts we can borrow from the lab rather than purchasing ourselves
 - Discussed what the design document should look like in relation to the project proposal - more detail than the project proposal but similar general concepts, with the addition of cost analysis.
+
+# 2022-25-09: Design Document Deaft w/ Jack & Alice:
+
+- Worked together to finalize the components necessary for the design document prior to the design review on Monday, 9/26
+- Understood that this was a rough draft which would need to be edited based on feedback received during the design review, prior to the final deadline on 9/29. 
+
+# 2022-26-09: Design Review #1 w/ Prof and TA:
+
+- Presented design document to Professor Flifet and several TAs, outlining our problem/solution, high-level requirements, visual aid, block diagram, subsystem breakdown, cost/schedule analysis, tolerance analysis, ethics/safety information, and citations
+- Received feedback to improve our visual aid with more detail, clean up our block diagram in order to make it more clear which parts are connected and remove the "boot" element from the diagram altogether, be more specific in our subsystem requirements to ensure we are not just repeating specs of the component but rather requirements of our design and including more citations to back up our document overall
+
+# 2022-29-09: Meeting #3 with TA + Design Doc Finalization:
+
+- Discussed several questions regarding the design document with our TA, which were discussed amongst Jack, Alice, and I prior to the meeting through text and comments on the docmument itself
+- Received clarification on how to improve with our subsystem requirements, block diagram, and high-level requirements 
+- Worked remotely to improve the design document based on professor and TA feedback in order to submit the final document prior to the 9/29 11:59pm deadline
+- Link to final design document: https://docs.google.com/document/d/1LdknCm0zml1bBu3zVbliBF07CaJqPWh1cXvjo9yShkY/edit?usp=sharing
