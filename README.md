@@ -53,7 +53,7 @@
 - Worked remotely to improve the design document based on professor and TA feedback in order to submit the final document prior to the 9/29 11:59pm deadline
 - Link to final design document: https://docs.google.com/document/d/1LdknCm0zml1bBu3zVbliBF07CaJqPWh1cXvjo9yShkY/edit?usp=sharing
 
-# 2022-03-10: PCB Design Tutorials:
+# 2022-03-10: PCB Design Tutorials [individual]:
 
 - Viewed the following tutorials to have more insight (outside of the KiCAD tutorial from the start of the semester) on how to design and build a PCB, what to keep in mind, how to troubleshoot, and how to order the design on PCBWay:
   - https://www.youtube.com/watch?v=ia2n7P3Csac
