@@ -70,3 +70,6 @@
 - Routed the PCB tracks based on KiCad suggestions and feedback from PCB design review 
 - Made sure to keep tracks connected to power and motors thicker 
 - Tried to keep all components and routing in a frame of 100mm x 100mm or less as per the course requirement for PCB design 
+- Did not complete routing as I was having trouble with some, discussed potential solutions/fixes to the routing with Alice and Jack 
+- End result on my end was as follows [incomplete]:
+<img width="672" alt="image" src="https://user-images.githubusercontent.com/41525737/195450921-7a0b9b85-7ca5-4057-8452-7edd32b29b9b.png">
