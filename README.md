@@ -59,3 +59,14 @@
   - https://www.youtube.com/watch?v=ia2n7P3Csac
   - https://www.youtube.com/watch?v=nIGwmF8dId0
   - https://www.cirexx.com/pcb-design-steps/
+
+# 2022-10-10: Schematic + PCB Design Continuation:
+- Met with Jack and Alice to review our finalized components for the design, and move forward with building out a full schematic, such that this could be converted to the PCB design
+- Discussed which motor should be finalized along with a motor driver which would both be compatible well with ESP32 and Arduino IDE 
+- Read through documentation for instructions on connecting motor drivers, motors, and ESP32 as well as on which ESP32 ports were meant for ADC and whether this was necessary for the purpose of our project
+
+# 2022-11-10: PCB Design Continuation [individual]:
+- With the finalized schematic of our design completed by Alice and Jack - as they attended the PCB Design Review conducted by TAs and Instructors (I had a personal conflict) -- we were able to convert this to a loose PCB design using footprints provided through KiCad as well as from online downloads for the ESP32 footprint
+- Routed the PCB tracks based on KiCad suggestions and feedback from PCB design review 
+- Made sure to keep tracks connected to power and motors thicker 
+- Tried to keep all components and routing in a frame of 100mm x 100mm or less as per the course requirement for PCB design 
