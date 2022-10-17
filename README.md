@@ -73,3 +73,6 @@
 - Did not complete routing as I was having trouble with some, discussed potential solutions/fixes to the routing with Alice and Jack 
 - End result on my end was as follows [incomplete]:
 <img width="672" alt="image" src="https://user-images.githubusercontent.com/41525737/195450921-7a0b9b85-7ca5-4057-8452-7edd32b29b9b.png">
+
+# 2022-12-10 & 2022-13-10: PCB Design Finalization and TA Meeting #4:
+- 
