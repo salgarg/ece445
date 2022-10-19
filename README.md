@@ -75,4 +75,14 @@
 <img width="672" alt="image" src="https://user-images.githubusercontent.com/41525737/195450921-7a0b9b85-7ca5-4057-8452-7edd32b29b9b.png">
 
 # 2022-12-10 & 2022-13-10: PCB Design Finalization and TA Meeting #4:
-- 
+- cleaned up PCB design routing to make it cleaner and ensure it fit the necessary widths + hole sizes for PCBway 
+- met with the TA and found out we had some hole sizes that were too small, causing our PCB to cost ~$60, to mitigate this issue we removed unnecessary grounding holes that were in the ESP32 and motor driver footprints
+- final PCB design was as follows:
+<img width="692" alt="image" src="https://user-images.githubusercontent.com/41525737/196776381-c3514bcc-4e99-4203-a326-91957290c6c4.png">
+
+# 2022-16-10: Ordering parts:
+- Met with Jack and Alice to order the parts we finalized for our design
+- Had to ensure that the parts were available and switch to others if they weren't
+- Had issues with availability of exact motor driver we were originally looking at (DRV8833PWP) but were able to find a very similar one which would not affect our overall design or PCB, which was in stock (DRV8833PWR)
+- Did not order the Molex 4-pin cables or battery pack yet, as we are waiting to order these until we talk to the machine shop about where everything will be placed on the boot and how it will affect the weight of the boot 
+- The following day all of our purchase requests were approved! 
