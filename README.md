@@ -86,3 +86,10 @@
 - Had issues with availability of exact motor driver we were originally looking at (DRV8833PWP) but were able to find a very similar one which would not affect our overall design or PCB, which was in stock (DRV8833PWR)
 - Did not order the Molex 4-pin cables or battery pack yet, as we are waiting to order these until we talk to the machine shop about where everything will be placed on the boot and how it will affect the weight of the boot 
 - The following day all of our purchase requests were approved! 
+
+# 2022-10-27: Meeting #5 w/TA + Meeting with Machine Shop:
+- Received parts ordered previously and locker to store parts
+- Notified that PCBs would arrive soon (within a day or two hopefully)
+- Notified that the soldering assignment is most likely not a requirement anymore/might be extra credit later in the semester
+- Discussed Alice's start to the UI of our project, which includes basic stats and buttons as of right now
+- Met with the machine shop to show them to motors we received and the boot, and hand off the parts for them to assemble 
