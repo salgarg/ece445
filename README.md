@@ -36,7 +36,7 @@
 - Shown around the lab that we have access to, and what different types of parts we can borrow from the lab rather than purchasing ourselves
 - Discussed what the design document should look like in relation to the project proposal - more detail than the project proposal but similar general concepts, with the addition of cost analysis.
 
-# 2022-25-09: Design Document Deaft w/ Jack & Alice:
+# 2022-25-09: Design Document Draft w/ Jack & Alice:
 
 - Worked together to finalize the components necessary for the design document prior to the design review on Monday, 9/26
 - Understood that this was a rough draft which would need to be edited based on feedback received during the design review, prior to the final deadline on 9/29. 
@@ -93,3 +93,9 @@
 - Notified that the soldering assignment is most likely not a requirement anymore/might be extra credit later in the semester
 - Discussed Alice's start to the UI of our project, which includes basic stats and buttons as of right now
 - Met with the machine shop to show them to motors we received and the boot, and hand off the parts for them to assemble 
+
+# 2022-11-02: Working Session with Alice and Jack
+- Met with Alice and Jack to pick-up our PCB boards and begin work on our project
+- Found necessary resistors and capacitors for our motor driver circuits and pressure sensor modules, with the exception of a 0.2 ohm resistor which we could not find in the lab
+- began soldering of resistors onto PCB - jack completed the direct soldering portion while Alice and I observed, learned how to do this so that we can do some of it in the future, and helped to organize the materials/tools necessary to do the soldering
+- completed soldering of 2 resistors for the pressure sensors on the board
