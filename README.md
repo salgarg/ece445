@@ -99,3 +99,31 @@
 - Found necessary resistors and capacitors for our motor driver circuits and pressure sensor modules, with the exception of a 0.2 ohm resistor which we could not find in the lab
 - began soldering of resistors onto PCB - jack completed the direct soldering portion while Alice and I observed, learned how to do this so that we can do some of it in the future, and helped to organize the materials/tools necessary to do the soldering
 - completed soldering of 2 resistors for the pressure sensors on the board
+
+# 2022-11-03: Meeting #5 w/TA + PCB Re-design
+- Met with Staisu to discuss progress on design module testing and overall project progress
+- Discovered the need for a programmer circuit within our PCB design, which was missing from the original design
+- Spent quite a few hours implementing the following programmer circuit suggested to be used with the ESP32 microcontroller, with auto-programming capabilities: https://pcbartists.com/design/embedded/esp32-cp2102-programmer-schematic/, re-routed the PCB for additional components, ensured we did not have holes on the design which were too small, and that the new additions to the PCB design did not cause it to fail the PCBway audit
+- Submitted the new PCB design for order, expecting it to arrive prior to the final demo
+- Discussed potential back-up plan in case the PCB does not arrive in time to work on and test prior to the final demo, as thanksgiving break is right before the demo and all three of us will not be on campus if the PCB arrives during break - and settled on the possibility of breadboarding the ESP32 dev kit and utilizing the programmer from it to interact with the ESP32 on the original PCB boards 
+- Began testing with ESP32 Development Kit -- tried to simply get it working with the Arduino IDE - ran into some issues with the cable we were using as it was microusb but not a wire which could carry data, so we had to use a different wire until successfully getting the ESP32 to transfer data to our computers and complete a simple LED blinking test
+- Placed order for multiples of original components necessary for design in order to have backups, and for new components needed for programmer circuit 
+- Also placed order for motor driver breakout board in case the programmer circuit on the new PCB boards is not usable in time, such that we can still control our motors without full integration on the PCB
+
+# 2022-11-04: Working session with Alice and Jack [Motor subsystem]
+- began testing on motor subsystem
+- since the motor drivers we are using with the esp32 can only be on the PCB, we needed to find motor drivers available within the lab room which would still be compatible with the stepper motors we are using, as well as the esp32 development kit in order to properly begin testing the code to control the motors, motor speed, and torque applied by motors -- we found online sources outlining the capabilities of L293D motor drivers with our Nema-23 stepper motors, and were able to successfully breadboard our motors and motor drivers with the esp32 development kit
+- Some of the sources used for breadboarding the L233D motor drivers with our Nema-23 stepper motors and the ESP32 dev kit were as follows:
+https://microcontrollerslab.com/stepper-motor-l293d-motor-driver-ic-arduino-tutorial/
+https://www.hackster.io/Arnov_Sharma_makes/l293d-with-esp32-wemos-lolin-d32-v2-hacked-edition-ea2086
+- had to find specifics about the Nema-23 motor such as the revolutions per minute possible for this motor
+- we were able to get the stepper motor working at a speed of 60 RPM by the end of this session
+
+# 2022-11-07: Working session with Alice and Jack [Control and Pressure Subsystems]
+- 
+
+# 2022-11-08: Working session with Alice and Jack [Pressure and Motor Subsystems]
+-
+
+# 2022-11-09: Working session with Alice and Jack [Control Subsystem]
+-
