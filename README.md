@@ -123,10 +123,16 @@ https://www.hackster.io/Arnov_Sharma_makes/l293d-with-esp32-wemos-lolin-d32-v2-h
 - we were able to get the stepper motor working at a speed of 60 RPM by the end of this session
 
 # 2022-11-07: Working session with Alice and Jack [Control and Pressure Subsystems]
-- 
+- Began working on bluetooth communication between the serial monitor of the Arduino IDE, a serial bluetooth terminal, and the ESP32 using the ESP32 Development Kit
+- Tested the bluetooth communication with the computer through the serial bluetooth terminal, by programming a LED turning on/off based on input to the serial bluetooth terminal containing the letter A or B -- found success with this test so we knew the bluetooth comm was functional
+- Continued pressure module testing to display pressure values read by FSR through bluetooth serial terminal - had issues with this due to baud rate but after researching and fixing this issue we were able to get the pressure values to display both on the bluetooth terminal and the serial monitor
+- Had another issue with stack dump if pressure sensor was pressed too hard beyond its limit of reading - fixed this by setting a maximum pressure limit that could be ready and displayed within the code (need to go back and ensure this does not mess up the values calculated after this/error testing overall)
 
 # 2022-11-08: Working session with Alice and Jack [Pressure and Motor Subsystems]
--
+- Tested the pressure module further to determine if pressure values being read were consistent, found some issues where the sensor is reading pressure values when there is no pressure being applied to the sensor -- need to go back and check on this issue and test with more consistent weights rather than manual pressure applied with fingers
+- Attempted to control motor speed using RPM values, such that we knew the torque being applied by the motor based on the speed it was running at - we ran into an issue here where the RPM does not seem accurate to the value that we are setting, and is somewhat incapable of going at a speed greater than 100 RPM - explored various different options for solving this issue or ensuring that we are receiving the correct RPM output through the motor but this still requires further testing and attention overall
+- Used the following graph found specifically for the Nema-23 for a torque vs speed relationship:
+<img width="848" alt="image" src="https://user-images.githubusercontent.com/41525737/200969961-a5d1b613-1631-4a7e-b78a-6ebcbf3aef87.png">
 
 # 2022-11-09: Working session with Alice and Jack [Control Subsystem]
 -
