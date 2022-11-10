@@ -109,6 +109,9 @@
 - Began testing with ESP32 Development Kit -- tried to simply get it working with the Arduino IDE - ran into some issues with the cable we were using as it was microusb but not a wire which could carry data, so we had to use a different wire until successfully getting the ESP32 to transfer data to our computers and complete a simple LED blinking test
 - Placed order for multiples of original components necessary for design in order to have backups, and for new components needed for programmer circuit 
 - Also placed order for motor driver breakout board in case the programmer circuit on the new PCB boards is not usable in time, such that we can still control our motors without full integration on the PCB
+- The following is the updated circuit schematic and PCB design for our project:
+<img width="806" alt="image" src="https://user-images.githubusercontent.com/41525737/200968657-201494e5-83f7-4f2a-a6a4-22a53d29aac9.png">
+<img width="588" alt="image" src="https://user-images.githubusercontent.com/41525737/200968693-1a0e35e3-e8cd-48a3-b67a-d63b6c8f0e32.png">
 
 # 2022-11-04: Working session with Alice and Jack [Motor subsystem]
 - began testing on motor subsystem
