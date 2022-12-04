@@ -144,3 +144,12 @@ https://www.hackster.io/Arnov_Sharma_makes/l293d-with-esp32-wemos-lolin-d32-v2-h
 - Worked on pressure module and integrating the measurements of pressure between the wall of the AirCast and air cell with the UI
 - Decided to switch to using WiFi communication betweenn the ESP32 and UI, as it is simpler to implement and has more resources available online, and can still perform the same functionality as originally intended
 
+# 2022-11-11:
+
+# 2022-11-12:
+
+# 2022-11-13:
+
+# 2022-11-14:
+
+# 2022-11-15:
