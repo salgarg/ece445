@@ -149,28 +149,36 @@ https://www.hackster.io/Arnov_Sharma_makes/l293d-with-esp32-wemos-lolin-d32-v2-h
 
 # 2022-11-11: Working session with Alice and Jack [Pressure and Control Subsystems]
 
-testing pressure module with wifi and UI with wifi, found out our ADC pins have been getting too much power and are fried on the esp32 dev kit - worked with TA and used oscilloscope + multimeter to figure this out - this is why the values of the pressure module were very inaccurate
+- Continued testing pressure module with wifi
+- Continued testing UI with wifi
+- Found out our ADC pins have been getting too much power and are fried on the esp32 dev kit - worked with TA and used oscilloscope + multimeter to figure this out - this is why the values of the pressure module were very inaccurate
 
 # 2022-11-12: Working session with Alice and Jack [Control Subsystems]
 
-tried to use just the esp32 microcontroller not the dev kit to program using the programmer breakout board found in the lab - tried both on PCB and with wires directly soldered onto esp32 — realized we needed buttons or transistors to put the esp32 into bootloader mode/not after the program was loaded - didn’t have any buttons so tried just doing this by quickly removing certain wires from ground based on if they were active high/low and what was necessary to put them into bootloader mode 
+- Tried to use just the esp32 microcontroller not the dev kit to program using the programmer breakout board found in the lab - tried both on PCB and with wires directly soldered onto esp32 — realized we needed buttons or transistors to put the esp32 into bootloader mode/not after the program was loaded - didn’t have any buttons so tried just doing this by quickly removing certain wires from ground based on if they were active high/low and what was necessary to put them into bootloader mode 
 
 # 2022-11-13: Working session with Alice and Jack [Control Subsystems]
 
-continued testing uploading code with getting accurate reedings with “spider” - found buttons and set up circuit but consistently got issue with stuck in download mode, received new esp32 dev kit and began testing pressure module further with this
+- Continued testing uploading code with getting accurate reedings with “spider” - found buttons and set up circuit but consistently got issue with stuck in download mode, received new esp32 dev kit and began testing pressure module further with this
 
 # 2022-11-14: Working session with Alice and Jack [Pressure and Control Subsystems]
 
-received new PCB - began soldering, found out we were previously using the wrong pins of the esp32 for the pressure module causing the esp32 ADC pins to get fried, continued testing pressure with new dev kit
+- Received new PCB - began soldering, found out we were previously using the wrong pins of the esp32 for the pressure module which is what caused the esp32 dev kit ADC pins to get fried during the first round of testing
+- Continued testing pressure with new dev kit
 
 # 2022-11-15: Working session with Alice and Jack [Pressure, Motor, and Control Subsystems]
 
-mock demo with TA, received boot from machine shop all put together, got motors and pressure module to work correctly with dev kit, worked on motor code, continued soldering pcb components, struggled with micro usb component on pcb, after soldering - ssp32 was getting power but could not be recognized by arduino - need to investigat this issue further, but micro usb component broke off - hard to solder
+- Completed our mock demo with our TA, Staisu
+- Received boot from machine shop all put together, got motors and pressure module to work correctly with dev kit
+- Worked on motor code
+- Continued soldering pcb components, struggled with micro usb component on pcb
+- After soldering - esp32 was getting power but could not be recognized by arduino - need to investigate this issue further, but micro usb component broke off - hard to solder
 
 # 2022-11-27: Working session with Alice and Jack [Pressure, Motor, and Control Subsystems]
 
-tried to integrate motor with pressure code — while controlling speed of motor based on a button toggle in frontend - reaching a kernel panic while trying to control motor and it stops working — going to continue trying to get both to work together tomorrow
+- Tried to integrate motor with pressure code — while controlling speed of motor based on a button toggle in frontend - reaching a kernel panic while trying to control motor and it stops working — going to continue trying to get both to work together tomorrow
 
 # 2022-11-28: Working session with Alice and Jack [Pressure, Motor, and Control Subsystems]
 
-successfully got motor code working alongside pressure module - without crashing, using the frontend interface. this is all being done using the breadboard & boot & esp32 dev kit, not the PCB as that does not currently work. We plan to make sure our code + modules are fully integrated aside from the PCB before trying to make the PCB work further with subsystems integrated within it, tried to start brainstorming ways of still integrating as many subsystems as possible with PCB rather than breadboard - including bodge wiring the esp32 dev kit to the esp32 footprint of the PCB, and integrating all other modules within the PCB directly OR bodge wiring the TX and RX transmission line traces properly such that data can be transmitted with the new PCB version using the programming circuit and esp32 chip itself rather than the dev kit
+- Successfully got motor code working alongside pressure module - without crashing, using the frontend interface. this is all being done using the breadboard & boot & esp32 dev kit, not the PCB as that does not currently work
+- We plan to make sure our code + modules are fully integrated aside from the PCB before trying to make the PCB work further with subsystems integrated within it, tried to start brainstorming ways of still integrating as many subsystems as possible with PCB rather than breadboard - including bodge wiring the esp32 dev kit to the esp32 footprint of the PCB, and integrating all other modules within the PCB directly OR bodge wiring the TX and RX transmission line traces properly such that data can be transmitted with the new PCB version using the programming circuit and esp32 chip itself rather than the dev kit
