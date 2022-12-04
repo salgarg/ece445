@@ -135,4 +135,12 @@ https://www.hackster.io/Arnov_Sharma_makes/l293d-with-esp32-wemos-lolin-d32-v2-h
 <img width="848" alt="image" src="https://user-images.githubusercontent.com/41525737/200969961-a5d1b613-1631-4a7e-b78a-6ebcbf3aef87.png">
 
 # 2022-11-09: Working session with Alice and Jack [Control Subsystem]
--
+- Worked on bluetooth characteristics -- communicating pressure value to phone as client and esp as server in HEX - need to figure out how to do this in ascii and then move communication protocols to web app
+- having issues connecting to wifi from web app altogether
+- practiced soldering so that we will be prepared when new PCB orders come in
+
+# 2022-11-10: Meeting #6 w/ TA + Working session with Alice and Jack [Pressure and Control Subsystems]
+- Had a weekly meeting with Staise about parts we've been using and our progress with testing them, the lack of points for anything in the gradebook, and the difficulty of implementing bluetooth functionaliity for the UI we had created, since it is a web app using React rather than React Native (meant for mobile web apps, which has more available guidance on implementing for the bluetooth functionality of the ESP32
+- Worked on pressure module and integrating the measurements of pressure between the wall of the AirCast and air cell with the UI
+- Decided to switch to using WiFi communication betweenn the ESP32 and UI, as it is simpler to implement and has more resources available online, and can still perform the same functionality as originally intended
+
