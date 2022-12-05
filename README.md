@@ -182,3 +182,7 @@ https://www.hackster.io/Arnov_Sharma_makes/l293d-with-esp32-wemos-lolin-d32-v2-h
 
 - Successfully got motor code working alongside pressure module - without crashing, using the frontend interface. this is all being done using the breadboard & boot & esp32 dev kit, not the PCB as that does not currently work
 - We plan to make sure our code + modules are fully integrated aside from the PCB before trying to make the PCB work further with subsystems integrated within it, tried to start brainstorming ways of still integrating as many subsystems as possible with PCB rather than breadboard - including bodge wiring the esp32 dev kit to the esp32 footprint of the PCB, and integrating all other modules within the PCB directly OR bodge wiring the TX and RX transmission line traces properly such that data can be transmitted with the new PCB version using the programming circuit and esp32 chip itself rather than the dev kit
+
+# 2022-11-29: Working session with Alice and Jack [Pressure, Motor, and Control Subsystems]
+- Finalized overall project for final demo, ensuring all subsystems worked as intended and together - with the ability to control the strap adjustment module and pressure module via the esp32 using the user interface through wifi
+- Completed further proof of tolerance analysis/proof of quantitative results as expected with motor tension and pressure reading accuracy 
