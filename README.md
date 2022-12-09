@@ -196,6 +196,7 @@ https://www.hackster.io/Arnov_Sharma_makes/l293d-with-esp32-wemos-lolin-d32-v2-h
 ![FA489BCA-5D1E-4515-B7D6-94945F2DD5AD_1_105_c](https://user-images.githubusercontent.com/41525737/206595367-4334c42c-cb00-4ca1-bbb0-e5a1e7a2ba9a.jpeg)
 
 - Final PCB soldered by Jack overnight before the final demo, with ESP32 preprogrammed on development kit, desoldered, and then soldered onto PCB (still not connecting to Wi-Fi even though it was when on the development kit, but receiving power and data signals):
+
 ![E34E3AE6-B557-4D14-923F-829BBBD8FE06_1_105_c](https://user-images.githubusercontent.com/41525737/206595379-9e92c1a6-0613-4b74-a717-6681fa29a620.jpeg)
 
 # 2022-11-29: Working session with Alice and Jack [Pressure, Motor, and Control Subsystems]
