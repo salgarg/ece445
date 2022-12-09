@@ -135,7 +135,7 @@ https://www.hackster.io/Arnov_Sharma_makes/l293d-with-esp32-wemos-lolin-d32-v2-h
 <img width="848" alt="image" src="https://user-images.githubusercontent.com/41525737/200969961-a5d1b613-1631-4a7e-b78a-6ebcbf3aef87.png">
 
 # 2022-11-09: Working session with Alice and Jack [Control Subsystem]
-**Kept track of work done beyond this point in a notion page linked here: https://marshy-foe-bb6.notion.site/445-lab-notebok-updates-bada172fb9d5457fbcb62aa42e90c2dd - but rewrote in this lab notebook in a more refined manner
+**Kept track of work done beyond this point in a notion page linked here: https://marshy-foe-bb6.notion.site/445-lab-notebok-updates-bada172fb9d5457fbcb62aa42e90c2dd - but transfered to this lab notebook + refined the content for readability
 
 - Worked on bluetooth characteristics -- communicating pressure value to phone as client and esp as server in HEX - need to figure out how to do this in ascii and then move communication protocols to web app
 - having issues connecting to wifi from web app altogether
@@ -146,6 +146,7 @@ https://www.hackster.io/Arnov_Sharma_makes/l293d-with-esp32-wemos-lolin-d32-v2-h
 - Had a weekly meeting with Staisu about parts we've been using and our progress with testing them, the lack of points for anything in the gradebook, and the difficulty of implementing bluetooth functionaliity for the UI we had created, since it is a web app using React rather than React Native (meant for mobile web apps, which has more available guidance on implementing for the bluetooth functionality of the ESP32
 - Worked on pressure module and integrating the measurements of pressure between the wall of the AirCast and air cell with the UI
 - Decided to switch to using WiFi communication betweenn the ESP32 and UI, as it is simpler to implement and has more resources available online, and can still perform the same functionality as originally intended
+- Conducted basic Wi-Fi communication tests by trying to light-up the LED on the ESP32 dev kit through a button on the user interface when the dev kit was not plugged in to a laptop or being controlled by buttons on the dev kit itself
 
 # 2022-11-11: Working session with Alice and Jack [Pressure and Control Subsystems]
 
@@ -155,24 +156,33 @@ https://www.hackster.io/Arnov_Sharma_makes/l293d-with-esp32-wemos-lolin-d32-v2-h
 
 # 2022-11-12: Working session with Alice and Jack [Control Subsystems]
 
-- Tried to use just the esp32 microcontroller not the dev kit to program using the programmer breakout board found in the lab - tried both on PCB and with wires directly soldered onto esp32 — realized we needed buttons or transistors to put the esp32 into bootloader mode/not after the program was loaded - didn’t have any buttons so tried just doing this by quickly removing certain wires from ground based on if they were active high/low and what was necessary to put them into bootloader mode 
+- Tried to use just the esp32 microcontroller not the dev kit to program using the FTDI programmer breakout board found in the lab 
+- tried both on PCB and with wires directly soldered onto esp32 — realized we needed buttons or transistors to put the esp32 into bootloader mode/not after the program was loaded - didn’t have any buttons so tried just doing this by quickly removing certain wires from ground based on if they were active high/low and what was necessary to put them into bootloader mode 
+- Image of FTDI programmer breakout board used:
+![IMG_1175](https://user-images.githubusercontent.com/41525737/206593397-8dafa5bb-b72f-4769-8d06-cb0ea306bbc9.jpg)
 
 # 2022-11-13: Working session with Alice and Jack [Control Subsystems]
 
-- Continued testing uploading code with getting accurate reedings with “spider” - found buttons and set up circuit but consistently got issue with stuck in download mode, received new esp32 dev kit and began testing pressure module further with this
+- Continued testing uploading code with getting accurate reedings with “spider” (wires directly soldered onto ESP32 microcontroller and plugged into breadboard, shown below)
+- Found an issue with connections between FTDI and ESP32 - where we had the TX and RX data transmission lines hooked up incorrectly, fixed this issue by looking into more documentation online and people who have gone through similar setups
+- found buttons from previous course lab kits to use for testing and set up circuit but consistently got issue with stuck in download mode, received new esp32 dev kit and began testing pressure module further with this
+- "Spider" circuit:
+![Uploading IMG_0037.jpg…]()
 
 # 2022-11-14: Working session with Alice and Jack [Pressure and Control Subsystems]
 
 - Received new PCB - began soldering, found out we were previously using the wrong pins of the esp32 for the pressure module which is what caused the esp32 dev kit ADC pins to get fried during the first round of testing
-- Continued testing pressure with new dev kit
+- Continued testing pressure with new ESP32 development kit
 
 # 2022-11-15: Working session with Alice and Jack [Pressure, Motor, and Control Subsystems]
 
 - Completed our mock demo with our TA, Staisu
 - Received boot from machine shop all put together, got motors and pressure module to work correctly with dev kit
 - Worked on motor code
-- Continued soldering pcb components, struggled with micro usb component on pcb
+- Continued soldering pcb components, struggled with micro usb component on pcb because the footprint for it was not placed close enough to the edge of the PCB board, and there was still circuitry below it - so the micro usb port had to be mounted onto the PCB vertically (shown below)
 - After soldering - esp32 was getting power but could not be recognized by arduino - need to investigate this issue further, but micro usb component broke off - hard to solder
+- Micro-usb soldering attempt (vertically) with hot glue used to hold it up vertically:
+![338B482A-C4E5-49F1-93FF-EEA9046DC2BC_1_105_c](https://user-images.githubusercontent.com/41525737/206595344-d80bc15a-e72b-47b3-8091-a661c837aa24.jpeg)
 
 # 2022-11-27: Working session with Alice and Jack [Pressure, Motor, and Control Subsystems]
 
@@ -182,7 +192,14 @@ https://www.hackster.io/Arnov_Sharma_makes/l293d-with-esp32-wemos-lolin-d32-v2-h
 
 - Successfully got motor code working alongside pressure module - without crashing, using the frontend interface. this is all being done using the breadboard & boot & esp32 dev kit, not the PCB as that does not currently work
 - We plan to make sure our code + modules are fully integrated aside from the PCB before trying to make the PCB work further with subsystems integrated within it, tried to start brainstorming ways of still integrating as many subsystems as possible with PCB rather than breadboard - including bodge wiring the esp32 dev kit to the esp32 footprint of the PCB, and integrating all other modules within the PCB directly OR bodge wiring the TX and RX transmission line traces properly such that data can be transmitted with the new PCB version using the programming circuit and esp32 chip itself rather than the dev kit
+- Bodge wiring of TX and RX data transmission lines:
+![FA489BCA-5D1E-4515-B7D6-94945F2DD5AD_1_105_c](https://user-images.githubusercontent.com/41525737/206595367-4334c42c-cb00-4ca1-bbb0-e5a1e7a2ba9a.jpeg)
+
+- Final PCB soldered by Jack overnight before the final demo, with ESP32 preprogrammed on development kit, desoldered, and then soldered onto PCB (still not connecting to Wi-Fi even though it was when on the development kit, but receiving power and data signals):
+![E34E3AE6-B557-4D14-923F-829BBBD8FE06_1_105_c](https://user-images.githubusercontent.com/41525737/206595379-9e92c1a6-0613-4b74-a717-6681fa29a620.jpeg)
 
 # 2022-11-29: Working session with Alice and Jack [Pressure, Motor, and Control Subsystems]
 - Finalized overall project for final demo, ensuring all subsystems worked as intended and together - with the ability to control the strap adjustment module and pressure module via the esp32 using the user interface through wifi
 - Completed further proof of tolerance analysis/proof of quantitative results as expected with motor tension and pressure reading accuracy 
+- Final video of project with subsystems working together:
+http://www.youtube.com/embed/M744uEvvWck
